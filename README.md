@@ -47,7 +47,7 @@ So editing `~/.config/hypr/bindings.lua` edits the file in this repo.
 | `omarchy` | Omarchy bar/dock (`shell.json`), menu extensions, hooks, branding |
 | `nvim` | Neovim (LazyVim) |
 | `ghostty` | Terminal |
-| `herdr-app` | Herdr desktop app: keybindings, settings, and the `prefix-mine` mod (Ctrl+B prefix with the Herdr TUI's default keys) |
+| `herdr-app` | Herdr desktop app: keybindings, settings, the `clean` layout with its `agents-clean`, `spaces-clean` and `chrome-clean` mods, and the `prefix-mine` mod (Ctrl+B prefix with the Herdr TUI's default keys) |
 | `git` | Git aliases and settings |
 | `btop`, `lazygit`, `imv`, `mise`, `herdr`, `opencode` | Individual app settings |
 | `fcitx5`, `xcompose` | Input method and compose-key shortcuts |
