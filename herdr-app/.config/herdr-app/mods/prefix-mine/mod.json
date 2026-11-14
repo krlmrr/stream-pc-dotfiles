@@ -1,0 +1,14 @@
+{
+  "place": "none",
+  "title": "Prefix",
+  "overlay": {
+    "kind": "dialog",
+    "modal": true,
+    "frame": "none",
+    "width": 560
+  },
+  "cloned_from": {
+    "name": "prefix",
+    "version": "0.1.15"
+  }
+}
