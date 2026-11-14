@@ -9,5 +9,10 @@ return {
 		render_modes = { "n", "c", "t" },
 		-- Keep the line under the cursor rendered too (by default it shows raw).
 		anti_conceal = { enabled = false },
+		-- Neovim also un-hides concealed text (like link URLs) on the cursor line
+		-- unless 'concealcursor' covers the mode; keep it hidden outside insert mode.
+		win_options = {
+			concealcursor = { rendered = "nvc" },
+		},
 	},
 }
