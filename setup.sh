@@ -16,6 +16,27 @@ clone() { # clone <repo-url> <dir>
   fi
 }
 
+# Packages this setup needs (asks for your password only if one is missing)
+missing=()
+for pkg in git stow zsh; do
+  pacman -Q "$pkg" &>/dev/null || missing+=("$pkg")
+done
+if ((${#missing[@]})); then
+  echo "→ Installing ${missing[*]}"
+  sudo pacman -S --needed --noconfirm "${missing[@]}"
+else
+  echo "✓ git, stow and zsh already installed"
+fi
+
+# Make zsh the login shell
+ZSH_BIN="$(command -v zsh)"
+if [[ $(getent passwd "$USER" | cut -d: -f7) == "$ZSH_BIN" ]]; then
+  echo "✓ zsh is already your login shell"
+else
+  echo "→ Changing your login shell to zsh (takes effect next login)"
+  chsh -s "$ZSH_BIN"
+fi
+
 # oh-my-zsh and the plugins .zshrc loads
 clone https://github.com/ohmyzsh/ohmyzsh.git "$ZSH_DIR"
 clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
