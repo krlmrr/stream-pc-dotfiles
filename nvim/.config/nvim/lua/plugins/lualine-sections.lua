@@ -4,10 +4,8 @@ return {
 	opts = function(_, opts)
 		opts.sections = opts.sections or {}
 
-		-- Cursor position (line:column) only, without the "% through file" figure.
-		opts.sections.lualine_y = {
-			{ "location", padding = { left = 1, right = 1 } },
-		}
+		-- No cursor position (line:column) or "% through file" figure.
+		opts.sections.lualine_y = {}
 
 		-- Clock in UTC, 12-hour, labelled with the timezone (e.g. "7:14 PM UTC").
 		-- The "!" in os.date formats the time in UTC instead of local time; the
