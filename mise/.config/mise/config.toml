@@ -1,0 +1,5 @@
+[tool_alias]
+php = "github:nunomaduro/static-php-builds"
+
+[tools]
+php = "latest"

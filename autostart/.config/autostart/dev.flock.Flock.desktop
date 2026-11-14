@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Flock
+Comment=Shows Flock in the tray
+Exec=/usr/libexec/flockphp/flock-app --background
+Icon=dev.flock.Flock
+Terminal=false
+X-GNOME-Autostart-enabled=true
