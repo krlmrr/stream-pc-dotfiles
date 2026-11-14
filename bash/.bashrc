@@ -14,5 +14,5 @@ source "$OMARCHY_PATH/default/bash/rc"
 # alias p='python'
 
 # Flock (added by `flock install`)
-if [ -d "/home/karlm/.local/share/flock/bin" ]; then export PATH="/home/karlm/.local/share/flock/bin":"/home/karlm/.local/share/flock/node-global/current/bin":"$PATH"; fi
+if [ -d "$HOME/.local/share/flock/bin" ]; then export PATH="$HOME/.local/share/flock/bin":"$HOME/.local/share/flock/node-global/current/bin":"$PATH"; fi
 . "$HOME/.cargo/env"
