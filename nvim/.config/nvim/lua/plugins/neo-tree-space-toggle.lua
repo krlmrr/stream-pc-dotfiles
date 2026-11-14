@@ -1,12 +1,13 @@
 -- Space opens/closes the folder under the cursor in neo-tree.
--- (LazyVim disables <space> there so it can act as <leader>; inside the tree
--- it now toggles folders instead.)
+-- nowait = false keeps <leader> shortcuts working in the tree: Neovim waits a
+-- moment after <space> to see if another key follows (e.g. <space>gg), and only
+-- toggles the folder if nothing does.
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
     window = {
       mappings = {
-        ["<space>"] = "toggle_node",
+        ["<space>"] = { "toggle_node", nowait = false },
       },
     },
   },
