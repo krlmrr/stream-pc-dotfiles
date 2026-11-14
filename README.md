@@ -42,11 +42,11 @@ So editing `~/.config/hypr/bindings.lua` edits the file in this repo.
 
 | Package | What it configures |
 |---|---|
-| `zsh`, `bash` | Shells (`.zshrc`, `.bashrc`, `.profile`, …) |
+| `zsh` | Shell (`.zshrc`, `.zprofile`) |
 | `hypr` | Hyprland window manager, plus the screen-sharing portal and picker |
 | `omarchy` | Omarchy bar/dock (`shell.json`), menu extensions, hooks, branding |
 | `nvim` | Neovim (LazyVim) |
-| `foot`, `ghostty` | Terminals |
+| `ghostty` | Terminal |
 | `git` | Git aliases and settings |
 | `btop`, `lazygit`, `imv`, `mise`, `herdr`, `opencode` | Individual app settings |
 | `fcitx5`, `xcompose` | Input method and compose-key shortcuts |
