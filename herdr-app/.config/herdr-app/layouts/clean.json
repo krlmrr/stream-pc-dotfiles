@@ -17,7 +17,7 @@
             "mod": "chrome-clean"
           },
           "size": {
-            "px": 46
+            "px": 10
           },
           "window_drag": true
         },
@@ -59,7 +59,7 @@
             }
           },
           "size": {
-            "px": 69
+            "px": 40
           }
         }
       ],
