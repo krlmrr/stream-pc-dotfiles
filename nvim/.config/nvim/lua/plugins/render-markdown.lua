@@ -11,7 +11,10 @@ return {
 		anti_conceal = { enabled = false },
 		-- Neovim also un-hides concealed text (like link URLs) on the cursor line
 		-- unless 'concealcursor' covers the mode; keep it hidden outside insert mode.
+		-- In insert mode nothing is concealed, so every line shows the raw text
+		-- (full link URLs, markup characters).
 		win_options = {
+			conceallevel = { default = 0, rendered = 3 },
 			concealcursor = { rendered = "nvc" },
 		},
 	},
