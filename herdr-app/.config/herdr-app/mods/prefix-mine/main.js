@@ -73,6 +73,7 @@ const GROUPS = [
   ]],
   ["window", [
     { keys: ["b"], label: "hide or show sidebar", cmd: ["layout.toggle", { id: "sidebar" }] },
+    { keys: ["y"], label: "hide or show changes", cmd: ["layout.toggle", { id: "panel" }] },
     { keys: ["s"], label: "settings", cmd: ["app.settings"] },
     { keys: ["?"], label: "all keys", cmd: ["app.help"] },
     { keys: [":"], label: "commands", cmd: ["app.palette"] },

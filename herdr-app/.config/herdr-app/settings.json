@@ -3,7 +3,7 @@
   "sounds": {
     "enabled": true
   },
-  "font_ligatures": false,
+  "font_ligatures": true,
   "minimum_contrast": 1,
-  "font": "JetBrainsMono Nerd Font"
+  "font": "FiraCode Nerd Font"
 }

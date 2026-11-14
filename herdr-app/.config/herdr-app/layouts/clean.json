@@ -116,7 +116,7 @@
                   },
                   "radius": 10,
                   "gap": 8,
-                  "lone": true
+                  "lone": false
                 }
               }
             },
