@@ -35,3 +35,6 @@ end
 
 -- Super + Space opens omacast (was: Omarchy menu).
 o.rebind("SUPER + SPACE", "omacast launcher", hl.dsp.global("omacast:toggle"))
+
+-- Super + Enter opens the Herdr desktop app (was: Terminal).
+o.rebind("SUPER + RETURN", "Herdr", { launch = "herdr-app" })
