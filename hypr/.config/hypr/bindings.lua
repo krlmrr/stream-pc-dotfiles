@@ -38,3 +38,21 @@ o.rebind("SUPER + SPACE", "omacast launcher", hl.dsp.global("omacast:toggle"))
 
 -- Super + Enter opens the Herdr desktop app (was: Terminal).
 o.rebind("SUPER + RETURN", "Herdr", { launch = "herdr-app" })
+
+-- Web apps removed: drop Omarchy's web app shortcuts.
+for _, key in ipairs({
+  "SUPER + SHIFT + A",          -- ChatGPT
+  "SUPER + SHIFT + ALT + A",    -- Grok
+  "SUPER + SHIFT + C",          -- Calendar (HEY)
+  "SUPER + SHIFT + E",          -- Email (HEY)
+  "SUPER + SHIFT + ALT + E",    -- New email (HEY)
+  "SUPER + SHIFT + Y",          -- YouTube
+  "SUPER + SHIFT + ALT + G",    -- WhatsApp
+  "SUPER + SHIFT + CTRL + G",   -- Google Messages
+  "SUPER + SHIFT + P",          -- Google Photos
+  "SUPER + SHIFT + S",          -- Google Maps
+  "SUPER + SHIFT + X",          -- X
+  "SUPER + SHIFT + ALT + X",    -- X Post
+}) do
+  hl.unbind(key)
+end
