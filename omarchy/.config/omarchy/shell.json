@@ -17,34 +17,6 @@
       ],
       "centerEnd": [
         {
-          "cities": [
-            {
-              "name": "Chicago",
-              "zone": "America/Chicago"
-            },
-            {
-              "name": "Sao Paulo",
-              "zone": "America/Sao_Paulo"
-            },
-            {
-              "name": "London",
-              "zone": "Europe/London"
-            },
-            {
-              "name": "Dubai",
-              "zone": "Asia/Dubai"
-            },
-            {
-              "name": "Tokyo",
-              "zone": "Asia/Tokyo"
-            }
-          ],
-          "id": "omarchy.elsewhen"
-        },
-        {
-          "id": "omarchy.weather"
-        },
-        {
           "id": "omarchy.system-update"
         }
       ],
